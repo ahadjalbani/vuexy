@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\StudentController;
 use App\Http\Controllers\Backend\DashboardController;
 
 /*
@@ -24,4 +26,10 @@ Route::get('/dashboard',[DashboardController::class,'dashboard']);
 
 
 Route::resource('user', UserController::class);
+
+
+Route::resource('post', PostController::class);
+
+Route::resource('student', StudentController::class);
+
 

@@ -46,11 +46,12 @@
 
                 <span class="menu-item text-truncate" data-i18n="Analytics">User</span></a>
               </li>
-              <li><a class="d-flex align-items-center" href="dashboard-ecommerce.html">
+              <li><a class="d-flex align-items-center" href="{{route('post.index')}}">
 
-                <span class="menu-item text-truncate" data-i18n="eCommerce">Post</span></a>
-              </li>
-            </ul>
+                <span class="{{route('post.index')}}" data-i18n="eCommerce">Post</span></a>
+
+                 </ul>
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="{{route('student.index')}}"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Chat">Student</span></a>
           </li>
       </ul>
     </div>
